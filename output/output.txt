@@ -1,0 +1,58 @@
+./driver
+top of ll: 0
+top of ll: 1
+top of ll: 2
+top of ll: 3
+top of ll: 4
+top of ll: 5
+top of ll: 6
+top of ll: 7
+top of ll: 8
+top of ll: 9
+length of ll is: 10
+top before rotation right: 9
+top after rotation right: 8
+top before rotation left: 8
+top after rotation left: 9
+popping value: 9 from ll
+popping value: 8 from ll
+popping value: 7 from ll
+popping value: 6 from ll
+popping value: 5 from ll
+popping value: 4 from ll
+popping value: 3 from ll
+popping value: 2 from ll
+popping value: 1 from ll
+popping value: 0 from ll
+length of ll is: 0
+top of as: 0
+top of as: 1
+top of as: 2
+top of as: 3
+top of as: 4
+top of as: 5
+top of as: 6
+top of as: 7
+top of as: 8
+top of as: 9
+push: error, stack is full, avoiding overflow
+popping value: 9 from as
+popping value: 8 from as
+popping value: 7 from as
+popping value: 6 from as
+popping value: 5 from as
+popping value: 4 from as
+popping value: 3 from as
+popping value: 2 from as
+popping value: 1 from as
+popping value: 0 from as
+popping value: 9 from bs
+popping value: 8 from bs
+popping value: 7 from bs
+popping value: 6 from bs
+popping value: 5 from bs
+popping value: 4 from bs
+popping value: 3 from bs
+popping value: 2 from bs
+popping value: 1 from bs
+popping value: 0 from bs

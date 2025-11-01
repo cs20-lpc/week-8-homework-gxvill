@@ -10,8 +10,10 @@ TODO List
 
 
 template <typename T>
-LinkedListStack<T>::LinkedListStack()
-{ }
+LinkedListStack<T>::LinkedListStack(){ 
+	top = nullptr;
+	this->length = 0;
+}
 
 template <typename T>
 LinkedListStack<T>::LinkedListStack(const LinkedListStack<T>& copyObj) {
@@ -38,7 +40,7 @@ void LinkedListStack<T>::clear() {
     // delete all nodes and set the top = nullptr (top will be the same as head)
 
     if(this->length == 0){
-		throw string ("clear: stack is empty");
+		return;
 	}
     while(top != nullptr){
         Node<T>* ptr = top->next;
@@ -78,7 +80,10 @@ void LinkedListStack<T>::copy(const LinkedListStack<T>& copyObj) {
 		temp->next = add;
 		temp = add;
 		copyPtr = copyPtr->next; // increment the next pointer
-		if(copyPtr->next == nullptr) add->next = nullptr;
+		if(copyPtr->next == nullptr){
+			add->next = nullptr;
+			break;
+		}
     }
 }
 

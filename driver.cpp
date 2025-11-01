@@ -29,10 +29,8 @@ int main(){
 		cout << "top of ll: " << ll.peek() << endl;
 	}
 
-	LinkedListStack<int> mm = ll;
 	
 	cout << "length of ll is: " << ll.getLength() << endl;
-	cout << "length of mm is: " << mm.getLength() << endl;
 
 	cout << "top before rotation right: " << ll.peek() << endl;
 	ll.rotate(Stack<int>::RIGHT);
@@ -48,14 +46,6 @@ int main(){
 	}
 
 	cout << "length of ll is: " << ll.getLength() << endl;
-	cout << "length of mm is: " << mm.getLength() << endl;
-	try{
-		mm.clear();
-	}
-	catch(const string& e){
-		cout << e << endl;
-	}
-
 	try{
 		ll.clear();
 	}
@@ -90,7 +80,6 @@ int main(){
 		cout << "popping value: " << bs.peek() << " from bs" << endl;
 		bs.pop();	
 	}
-
 
 	return 0;
 }
